@@ -1,0 +1,12 @@
+Workflow:
+	-Tokenize "Ithaca"
+	-POS tag "Ithaca"
+	-Bin words by POS tag, e.g.:
+		dict [
+			dict NP [{Bloom:34}, {Stephen:12}]
+			dict JJ [{clear:1}, {quick:4}]
+			dict ,  [{,:450}]
+		]
+	-Markov analysis of POS stream
+	-Markov stream of POS tags
+	-Weighted pick of words from POS bins
